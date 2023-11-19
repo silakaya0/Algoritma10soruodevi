@@ -1,0 +1,91 @@
+1.SORU
+
+#include<stdio.h>
+int main()
+{
+ int terim1,terim2,terim3,n,i;
+ printf("Kaç terim yazılsın? ");
+ scanf("%d",&n);
+ terim1=0;
+ terim2=1;
+ for(i=1;i<=n;i++)
+ {
+ printf("%d ",terim1);
+ terim3 = terim1 + terim2;
+ terim1 = terim2;
+ terim2 = terim3;
+ }
+
+}
+
+
+2.SORU
+
+#include <stdio.h>
+
+int main()
+{
+int gun;
+printf("1-7 araliginda bir deger giriniz: ");
+scanf("%d", &gun);
+switch(gun){
+case 1:
+printf("Pazartesi");
+break;
+case 2: 
+printf("Sali");
+break;
+case 3: 
+printf("Carsamba");
+break;
+case 4:
+printf("Persembe");
+break;
+case 5:
+printf("Cuma");
+break;
+case 6:
+printf("Cumartesi");
+break;
+case 7:
+printf("Pazar");
+break;
+default:
+printf("Yanlış değer girdiniz !");
+}
+}
+
+
+
+3.SORU
+
+ 
+#include<stdio.h>
+
+ 
+ int main()
+ {
+ 	
+ 	int sayi1,sayi2,sayi3;
+    printf("1.Sayıyı giriniz: ");
+    scanf("%d",&sayi1);
+    printf("2.İkinci sayıyı giriniz: ");
+    scanf("%d",&sayi2);
+    printf("3.Sayıyı giriniz: ");
+    scanf("%d",&sayi3);
+    
+    if( sayi1 >= sayi2 && sayi1 >= sayi3 ){
+    
+        printf("%d girilen en büyük sayıdır.", sayi1);
+    }
+    
+    else if( sayi2 >= sayi1 && sayi2 >= sayi3 ){
+        printf("%d girilen en büyük sayıdır.", sayi2);
+    } 
+    
+    else if( sayi3 >= sayi1 && sayi3 >= sayi2 ){
+        printf("%d  girilen en büyük sayıdır.", sayi3);
+    }        
+    
+    
+ }
